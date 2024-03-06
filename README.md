@@ -3,7 +3,7 @@ This is a template for the course project for the CUDA at Scale for the Enterpri
 
 ## Project Description
 
-Beyond just being a template for course members, this project can be used by non-course members as the general structure for CUDA projects.
+The NPP Image Resizer is a high-performance image processing application developed to showcase the capabilities of NVIDIA's Performance Primitives Library (NPP) for efficient image resizing operations. This project leverages the power of CUDA-enabled GPUs to achieve fast and high-quality image resizing, supporting various image formats. The purpose of this project is to provide developers and researchers with a tool that can be easily integrated into their workflows for image manipulation tasks, such as scaling images up or down with minimal loss of quality. By utilizing the GPU for computation, the NPP Image Resizer significantly reduces processing time compared to CPU-based image resizing methods, making it ideal for applications that require real-time image processing or handling large datasets.
 
 ## Code Organization
 
@@ -11,22 +11,25 @@ Beyond just being a template for course members, this project can be used by non
 This folder should hold all binary/executable code that is built automatically or manually. Executable code should have use the .exe extension or programming language-specific extension.
 
 ```data/```
-This folder should hold all example data in any format. If the original data is rather large or can be brought in via scripts, this can be left blank in the respository, so that it doesn't require major downloads when all that is desired is the code/structure.
+The folder contains the input data.
 
-```lib/```
-Any libraries that are not installed via the Operating System-specific package manager should be placed here, so that it is easier for inclusion/linking.
+```Common/```
+The hpp headers are in this folder
 
 ```src/```
-The source code should be placed here in a hierarchical fashion, as appropriate.
+The source code folder
 
-```README.md```
-This file should hold the description of the project so that anyone cloning or deciding if they want to clone this repository can understand its purpose to help with their decision.
-
-```INSTALL```
-This file should hold the human-readable set of instructions for installing the code so that it can be executed. If possible it should be organized around different operating systems, so that it can be done by as many people as possible with different constraints.
-
-```Makefile or CMAkeLists.txt or build.sh```
-There should be some rudimentary scripts for building your project's code in an automatic fashion.
+```Makefile```
+Clean: Removes all compiled objects and executables to ensure a fresh start.
+Command: make clean
+Build: Compiles the source code into executable form.
+Command: make build
+Run: Executes the compiled application.
+Command: make run
+All: Performs cleaning, building, and running in sequence.
+Command: make all
 
 ```run.sh```
-An optional script used to run your executable code, either with or without command-line arguments.
+This run the application with three parameters
+bin/nppresize.exe --input path/to/your/input/image --output path/to/your/output/file --scale 2.0
+

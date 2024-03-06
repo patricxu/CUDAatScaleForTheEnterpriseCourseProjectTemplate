@@ -1,0 +1,1 @@
+bin/nppresize.exe --input data/Lena.pgm --output Lena_sacaled.pgm --scale 2
