@@ -1,5 +1,5 @@
-# CUDAatScaleForTheEnterpriseCourseProjectTemplate
-This is a template for the course project for the CUDA at Scale for the Enterprise
+# NPP Resize
+This is a project is forked from CUDAatScaleForTheEnterpriseCourseProjectTemplate, the course project for the CUDA at Scale for the Enterprise
 
 ## Project Description
 
